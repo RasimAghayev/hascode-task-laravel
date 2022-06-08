@@ -1,7 +1,7 @@
 <?php
-namespace Providers;
+namespace App\Providers;
 
-use Providers\SHAHasher;
+use App\Providers\SHAHasher;
 use Illuminate\Support\ServiceProvider;
 
 class SHAHashServiceProvider extends ServiceProvider {
@@ -12,9 +12,7 @@ class SHAHashServiceProvider extends ServiceProvider {
      * @return void
      */
     public function register() {
-        $this->app['hash'] = $this->app->share(function () {
-            return new SHAHasher();
-        });
+        $this->app->singleton('hash', function() { return new ShaHasher; });
 
     }
 

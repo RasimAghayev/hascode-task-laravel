@@ -1,11 +1,11 @@
 <?php
-namespace Providers;
+namespace App\Providers;
 
-use Providers\SHAHasher;
-use Illuminate\Hashing\HashServiceProvider;
-use Illuminate\Contracts\Hashing\Hasher ;
+use App\Providers\SHAHasher;
+use Illuminate\Contracts\Hashing\Hasher as HasherContract;
+    use Illuminate\Hashing\AbstractHasher;
 
-class SHAHasher implements Hasher {
+class SHAHasher extends AbstractHasher implements HasherContract {
 
     /**
      * Hash the given value.
