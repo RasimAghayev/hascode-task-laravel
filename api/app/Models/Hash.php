@@ -8,5 +8,5 @@ use Illuminate\Database\Eloquent\Model;
 class Hash extends Model
 {
     use HasFactory;
-    protected $fillable = ['data', 'hash'];
+    protected $fillable = ['data'];
 }
