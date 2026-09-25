@@ -23,7 +23,7 @@ class HashTest extends TestCase
             'password' => \Hash::make('secret9874'),
         ]);
 
-        if (!auth()->attempt(['email'=>$user->email, 'password'=>'secret1234'])) {
+        if (!auth()->attempt(['email'=>$user->email, 'password'=>'secret9874'])) {
             return response(['message' => 'Login credentials are invaild']);
         }
 

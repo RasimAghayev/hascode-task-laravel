@@ -25,7 +25,7 @@ class AuthController extends Controller
         $user = User::create([
             'name' => $request->name,
             'email' => $request->email,
-            'password' => hash('sha1',$request->password)
+            'password' => bcrypt($request->password)
         ]);
 
         $accessToken = $user->createToken('authToken')->accessToken;
