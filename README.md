@@ -1,4 +1,6 @@
 # hascode-task-laravel
+![Views](https://hits.sh/github.com/RasimAghayev/hascode-task-laravel.svg?label=views&color=0e75b6)
+
 
 Laravel 9 API application with Hash CRUD and Auth endpoints.
 
