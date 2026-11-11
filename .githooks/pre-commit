@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# Pre-commit entry point for the gitleaks secret-scan hook.
+# Opt-in: `git config core.hooksPath .githooks` (not committed, per-clone).
+set -euo pipefail
+
+HOOK_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+REPO_ROOT="$(cd "$HOOK_DIR/.." && pwd)"
+
+bash "$REPO_ROOT/scripts/secret-scan.sh"

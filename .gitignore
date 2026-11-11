@@ -1,5 +1,20 @@
+# Editor / IDE artifacts (never committed)
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS artifacts
+.DS_Store
+Thumbs.db
+
+# Dependencies
 /vendor/
 node_modules/
+api/vendor/
+api/node_modules/
+
 npm-debug.log
 yarn-error.log
 
