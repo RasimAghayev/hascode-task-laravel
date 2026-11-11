@@ -1,7 +1,7 @@
 version: 2
 updates:
   - package-ecosystem: "composer"
-    directory: "/"
+    directory: "/api"
     schedule:
       interval: "weekly"
       day: "monday"
@@ -15,12 +15,12 @@ updates:
       prefix-development: "build(deps-dev)"
 
   - package-ecosystem: "npm"
-    directory: "/"
+    directory: "/api"
     schedule:
       interval: "weekly"
       day: "monday"
       time: "06:00"
-    open-pull-requests-limit: 10
+    open-pull-requests-limit: 5
     labels:
       - "dependencies"
       - "npm"

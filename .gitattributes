@@ -1,0 +1,12 @@
+* text=auto eol=lf
+
+*.php text
+*.md text
+*.json text
+*.yml text
+*.yaml text
+*.xml text
+*.lock text
+
+.github export-ignore
+CHANGELOG.md export-ignore
